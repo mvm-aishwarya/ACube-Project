@@ -1,0 +1,38 @@
+//
+//  loginContentManagerVC.h
+//  ACube
+//
+//  Created by Akshay Yadav on 11/3/14.
+//  Copyright (c) 2014 Akshay Yadav. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <Firebase/Firebase.h>
+
+
+@interface loginContentManagerVC : UIViewController<UITableViewDelegate,UITableViewDataSource>
+{
+    NSString *thisUsersRole;
+    
+    NSString *listOfCoursesURL;
+}
+
+
+
+
+
+@property (weak, nonatomic) IBOutlet UIButton *addCourseButtonOutlet;
+@property (weak, nonatomic) IBOutlet UIButton *deleteContentManager;
+
+- (IBAction)addCourseButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITableView *listOfCourses;
+
+@property (weak, nonatomic) IBOutlet UILabel *firstNameOfLoggedInUser;
+
+
+
+@property (weak, nonatomic) IBOutlet UIButton *DeleteContentManager;
+
+
+@end
